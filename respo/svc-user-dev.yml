@@ -1,29 +1,29 @@
 datasource:
-	url: jdbc:mysql://localhost/longge?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true
-	username: root
-	password: root
+    url: jdbc:mysql://localhost/longge?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true
+    username: root
+    password: root
 redis:
-	host: 127.0.0.1
-	port: 6379
-		pool:
-			max-idle: 8
-			min-idle: 0
+    host: 127.0.0.1
+    port: 6379
+        pool:
+            max-idle: 8
+            min-idle: 0
 http:
-	multipart:
-		max-file-size: 10Mb
-		max-request-size: 100Mb
+    multipart:
+        max-file-size: 10Mb
+        max-request-size: 100Mb
 pass:
-	enableTest: false
-	mockLogin: false
+    enableTest: false
+    mockLogin: false
 entity2database:
-	catalog: longge
-	schema: root
-	enableDelete: false
+    catalog: longge
+    schema: root
+    enableDelete: false
 libPermissionAop:
-	enable: false
+    enable: false
 logging:
-	level: error
+    level: error
 eureka:
-	defaultZone: http://localhost:8761/eureka/
+    defaultZone: http://localhost:8761/eureka/
 server:
-	port: 8762
+    port: 8762
