@@ -21,7 +21,7 @@ zuul:
       serviceId: svc-crm
     svc-ews:
       path: /svc-ews/**
-      serviceId: svc-crm
+      serviceId: svc-ews
     svc-cm:
       path: /svc-cm/**
       serviceId: svc-cm
