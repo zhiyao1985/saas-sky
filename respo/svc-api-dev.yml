@@ -19,15 +19,15 @@ zuul:
     svc-crm:
       path: /svc-crm/**
       serviceId: svc-crm
-#    svc-ews:
-#      path: /svc-ews/**
-#      serviceId: svc-crm
-#    svc-cm:
-#      path: /svc-cm/**
-#      serviceId: svc-cm
-#    svc-fri:
-#      path: /svc-fri/**
-#      serviceId: svc-fri
-#    svc-marke:
-#      path: /svc-marke/**
-#      serviceId: svc-marke
+    svc-ews:
+      path: /svc-ews/**
+      serviceId: svc-crm
+    svc-cm:
+      path: /svc-cm/**
+      serviceId: svc-cm
+    svc-fri:
+      path: /svc-fri/**
+      serviceId: svc-fri
+    svc-marke:
+      path: /svc-marke/**
+      serviceId: svc-marke
