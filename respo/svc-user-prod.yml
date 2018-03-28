@@ -1,0 +1,46 @@
+mybatis:
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
+  type-aliases-package: com.atzhixiao.svcuser,com.atzhixiao.clouddefine,com.atzhixiao.clouduser
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.log4j.Log4jImpl
+  type-handlers-package: com.atzhixiao.clouddefine
+spring:
+  application:
+    name: svc-user
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/cloud?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=true
+    username: root
+    password: root
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-idle: 8
+      min-idle: 0
+  http:
+    multipart:
+      max-file-size: 10Mb
+      max-request-size: 100Mb
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+paas:
+  enableTest: false
+  mockLogin: false
+entity2database:
+  catalog: cloud
+  schema: root
+  enableDelete: false
+libPermissionAop:
+  enable: false
+logging:
+  level: error
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8762
